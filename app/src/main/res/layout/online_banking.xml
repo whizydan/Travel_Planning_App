@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="20dp"
+    app:strokeWidth="2dp"
+    app:cardElevation="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Bank Transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            android:id="@+id/bank_name"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Bank Name"
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:errorEnabled="true"
+        android:id="@+id/account_name"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Acccount Number"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            android:id="@+id/account_number"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Acccount Holder Name"
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            android:visibility="gone"
+            android:id="@+id/price"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Price"
+                android:inputType="numberSigned"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:id="@+id/pay"
+            android:text="Pay"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

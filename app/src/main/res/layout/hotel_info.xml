@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="20dp"
+    app:cardElevation="4dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
+            android:textAlignment="center"
+            android:text="Hotel Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_margin="10dp"
+            android:text="From 08:00 AM - 10:00 PM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/location"
+            android:layout_margin="10dp"
+            android:text="California St Boulivered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_margin="10dp"
+            android:text="Long description goes here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_margin="10dp"
+            android:text="Contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/feedback"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Provide your feedback"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="10dp"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:backgroundTint="#FFC107"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

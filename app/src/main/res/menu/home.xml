@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/home"
+        app:showAsAction="withText"
+        />
+    <item
+        android:title="Deals"
+        android:id="@+id/deals"
+        android:icon="@drawable/baseline_discount_24"
+        app:showAsAction="withText"
+        />
+    <item
+        android:title="Plans"
+        android:id="@+id/plans"
+        app:showAsAction="withText"
+        android:icon="@drawable/baseline_plans_border_24"
+        />
+    <item
+        android:title="Profile"
+        android:id="@+id/profile"
+        app:showAsAction="withText"
+        android:icon="@drawable/baseline_account_circle_24"
+        />
+</menu>

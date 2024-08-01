@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="20dp"
+    app:strokeWidth="2dp"
+    app:cardElevation="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
+            android:text="Wallet Transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            android:id="@+id/provider"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Name of E-Wallet"
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            android:id="@+id/walletAddress"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Account Number"
+                android:inputType="numberSigned"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            android:visibility="gone"
+            android:id="@+id/price"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Price"
+                android:inputType="numberSigned"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            android:id="@+id/username"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Account Holder Name"
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            android:id="@+id/sso"
+            android:visibility="gone"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Single sign-on code"
+                android:inputType="text"
+                android:text="vba"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:id="@+id/pay"
+            android:text="Pay"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

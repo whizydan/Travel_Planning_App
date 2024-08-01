@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".Init"
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TravelPlanningApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".pages.EditCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.PaidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.ProcessedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.ConfrimCarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.SelectCarSeatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.PreOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.SelectFlightSeatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.AddPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.RecentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.AttractionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.MemoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.PayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.TicketsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.AddCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.TranslateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.RestaurantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.MapsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelPlanningApp" />
+        <activity
+            android:name=".pages.CardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.SavedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.AttractionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.DestinationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

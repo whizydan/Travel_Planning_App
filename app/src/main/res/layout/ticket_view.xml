@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    app:strokeWidth="5dp"
+    app:contentPadding="10dp"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="#706F6F"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="5dp"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@color/white"
+            android:text="Travel Planning App"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:src="@drawable/qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/type"
+            android:textColor="@color/white"
+            android:text="Ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/email"
+            android:text="Sarah Michigan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/price"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:text="Price: RM 120"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

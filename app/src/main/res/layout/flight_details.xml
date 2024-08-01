@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:contentPadding="20dp"
+    app:cardElevation="4dp"
+    app:strokeColor="#ECEFF1"
+    app:strokeWidth="2dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/aclonica"
+            android:text="Fligh Details"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/from"
+                android:layout_weight="0.4"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_weight="0.4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flight"/>
+            <TextView
+                android:id="@+id/to"
+                android:layout_weight="0.4"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:padding="20dp"
+            android:gravity="end"
+            android:id="@+id/price"
+            android:text="200 RM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="10dp"
+            app:strokeColor="#ECEFF1"
+            app:strokeWidth="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Luggage policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:alpha="0.9"
+                    android:text="Every passenger is entitled to a free bag policy of 2 kg per person any further
+will be charged an extra of 10 RM/Kg at the time you arrive at the aiport."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:id="@+id/button"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Proceed" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
